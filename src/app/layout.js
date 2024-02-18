@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         className={cx(
           urbanist.variable,
           windsong.variable,
-          `font-base font-thin bg-light dark:bg-dark`
+          `font-base bg-light dark:bg-dark`
         )}
       >
         <Header />
