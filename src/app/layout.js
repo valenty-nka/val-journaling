@@ -1,8 +1,8 @@
 import "./globals.css";
 import { Urbanist } from "next/font/google";
 import { WindSong } from "next/font/google";
-import { cx } from "@/utils";
-import Header from "@/components/Header";
+import Header from "@/src/components/Header";
+import Footer from "../components/Footer";
 
 const urbanist = Urbanist({
   subsets: ["latin"],
@@ -24,14 +24,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={cx(
-          urbanist.variable,
-          windsong.variable,
-          `font-base bg-light dark:bg-dark`
-        )}
+        className={`font-base bg-light ${urbanist.variable} ${windsong.variable}`}
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

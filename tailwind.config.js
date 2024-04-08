@@ -10,15 +10,15 @@ module.exports = {
       colors: {
         dark: "#1b1b1b",
         light: "#fff",
-        accent: "#7B00D3",
+        accent: "#3B5A78",
         accentDark: "#ffdb4d",
         gray: "#747474",
       },
       fontFamily: {
-        sans: ["Urbanist", "sans-serif"],
-        windsong: ["WindSong", "cursive"],
+        base: ["var(--font-base)"],
+        accent: ["var(--font-accent)"],
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
 };

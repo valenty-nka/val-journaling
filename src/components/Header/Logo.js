@@ -5,8 +5,8 @@ import logoBig from "@/public/big-logo.png";
 const Logo = () => {
   return (
     <Link href="/">
-      <div>
-        <Image src={logoBig} alt="logo" id="logo" />
+      <div className="w-36">
+        <Image src={logoBig} alt="ValJournaling logo" id="logo" />
       </div>
     </Link>
   );
