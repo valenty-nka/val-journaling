@@ -15,6 +15,7 @@ const BlogLayoutThree = ({ blog }) => {
           width={blog.image.width}
           height={blog.image.height}
           className="aspect-[4/3] w-full h-full object-cover object-center group-hover:scale-110 duration-500 transition-all ease brightness-50 group-hover:brightness-90"
+          sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw"
         />
       </Link>
       <div className="flex flex-col w-full mt-4">
@@ -25,13 +26,13 @@ const BlogLayoutThree = ({ blog }) => {
           <h1 className="font-light text-lg text-dark">
             <span
               className="bg-gradient-to-r from-accent to-accent bg-[length:0px_1px]
-              group-hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-all duration-300 ease py-1"
+              group-hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-all duration-300 ease py-1 text-sm sm:text-lg"
             >
               {blog.title}
             </span>
           </h1>
         </Link>
-        <span className="text-gray/75 text-md">
+        <span className="text-gray/75 text-sm sm:text-md">
           {format(new Date(blog.publishedAt), "MMM dd, yyyy")}
         </span>
       </div>

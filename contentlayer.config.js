@@ -1,12 +1,10 @@
 import { makeSource, defineDocumentType } from "@contentlayer/source-files";
-import { description } from "./project files/siteMetaData";
 import readingTime from "reading-time";
 import remarkGfm from "remark-gfm";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypePrettyCode from "rehype-pretty-code";
 import GithubSlugger from "github-slugger";
-import { log } from "console";
 
 const Blog = defineDocumentType(() => ({
   name: "Blog",
