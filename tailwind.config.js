@@ -18,6 +18,10 @@ module.exports = {
         base: ["var(--font-base)"],
         accent: ["var(--font-accent)"],
       },
+      screens: {
+        sxl: "1180px",
+        xs: "480px",
+      },
     },
   },
   plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
