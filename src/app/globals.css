@@ -15,6 +15,12 @@ html {
   scroll-behavior: smooth;
 }
 
+a,
+button,
+Link {
+  cursor: pointer;
+}
+
 h1>a>.icon.icon-link:before,
 h2>a>.icon.icon-link:before,
 h3>a>.icon.icon-link:before {

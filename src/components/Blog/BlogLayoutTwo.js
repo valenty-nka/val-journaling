@@ -5,7 +5,7 @@ import { format } from "date-fns";
 
 const BlogLayoutTwo = ({ blog }) => {
   return (
-    <div className="group grid grid-cols-12 gap-4 items-center text-accent">
+    <div className="group grid grid-cols-12 gap-4 items-center text-accent h-full">
       <Link
         href={blog.url}
         className="col-span-12 xs:col-span-4 h-full overflow-hidden"
@@ -18,7 +18,7 @@ const BlogLayoutTwo = ({ blog }) => {
           width={blog.image.width}
           height={blog.image.height}
           className="aspect-square w-full h-full object-cover object-center group-hover:scale-110 duration-500 transition-all ease brightness-50 group-hover:brightness-90"
-          sizes="(max-width:480px) 100vw, 33vw"
+          sizes="(max-width:480px) 100vw, 35vw"
         />
       </Link>
       <div className="col-span-12 xs:col-span-8 w-full">

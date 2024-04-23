@@ -6,7 +6,7 @@ import { slug } from "github-slugger";
 
 const BlogLayoutOne = ({ blog }) => {
   return (
-    <div className="group inline-block overflow-hidden relative">
+    <div className="group inline-block overflow-hidden relative h-full">
       <Image
         src={blog.image.filePath.replace("../public", "")}
         placeholder="blur"
@@ -21,7 +21,7 @@ const BlogLayoutOne = ({ blog }) => {
         <Tag
           link={`/categories/${slug(blog.tags[0])}`}
           name={blog.tags[0]}
-          className="text-light font-light text-xs  sm:text-sm md:text-base"
+          className="text-light font-light sm:text-sm md:text-base"
         />
         <Link href={blog.url} className="mt-1 sm:mt-6">
           <h1 className="font-light xs:text-sm sm:text-base md:text-xl text-light">
