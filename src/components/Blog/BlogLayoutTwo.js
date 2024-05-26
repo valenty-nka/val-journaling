@@ -17,7 +17,7 @@ const BlogLayoutTwo = ({ blog }) => {
           alt={blog.title}
           width={blog.image.width}
           height={blog.image.height}
-          className="aspect-square w-full h-full object-cover object-center group-hover:scale-110 duration-500 transition-all ease brightness-50 group-hover:brightness-90"
+          className="aspect-square w-full h-full object-cover object-center group-hover:scale-110 duration-700 transition-all ease-in-expo brightness-90 group-hover:brightness-50"
           sizes="(max-width:480px) 100vw, 35vw"
         />
       </Link>
@@ -29,7 +29,7 @@ const BlogLayoutTwo = ({ blog }) => {
           <h1 className="font-light text-lg text-dark">
             <span
               className="bg-gradient-to-r from-accent to-accent bg-[length:0px_1px]
-              group-hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-all duration-300 ease py-1 text-base md:text-lg"
+              group-hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-linear py-1 text-base md:text-lg"
             >
               {blog.title}
             </span>

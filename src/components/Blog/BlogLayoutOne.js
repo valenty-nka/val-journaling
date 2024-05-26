@@ -14,7 +14,7 @@ const BlogLayoutOne = ({ blog }) => {
         alt={blog.title}
         width={blog.image.width}
         height={blog.image.height}
-        className="object-center object-cover w-full h-full group-hover:scale-110 duration-500 transition-all ease-in-out brightness-50 hover:brightness-90"
+        className="object-center object-cover w-full h-full group-hover:scale-105 duration-700 transition-all ease-in-expo brightness-90 hover:brightness-50"
         sizes="(max-width:1180px) 100vw, 50vw"
       />
       <div className="w-full absolute bottom-0 p-4 xs:p-6 sm:p-10 z-20">
@@ -27,7 +27,7 @@ const BlogLayoutOne = ({ blog }) => {
           <h1 className="font-light xs:text-sm sm:text-base md:text-xl text-light">
             <span
               className="bg-gradient-to-r from-light to-light bg-[length:0px_1px]
-              group-hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-all duration-500 ease py-1"
+              group-hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-linear py-1"
             >
               {blog.title}
             </span>

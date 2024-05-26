@@ -18,7 +18,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 right-0 left-0 px-4 w-full h-16 flex md:px-10 items-center justify-between bg-light shadow-md shadow-accent-500 z-40">
+    <header className="sticky top-0 right-0 left-0 px-4 w-full h-16 flex md:px-10 items-center justify-between border-b-[1px] border-accent border-opacity-20 bg-light z-40">
       {/* OVERLAY FOR MOBILE */}
       <div
         className="absolute w-full h-[100vh] bg-black top-16 left-0 bottom-0 right-0 z-30 md:hidden duration-500 transition-all ease-in-out pointer-events-none"
@@ -129,9 +129,9 @@ const Header = () => {
           </div>
         </div>
       </button>
-
+      
       {/* FULL SIZE NAV */}
-      <nav className="w-[55%] p-4 capitalize items-stretch justify-around border-[1px] border-accent  border-opacity-25 border-b-0 border-t-0 hidden md:flex">
+      <nav className="w-[55%] p-4 capitalize items-stretch justify-around hidden md:flex">
         <Link
           href="/"
           className=" hover:text-accent transition-all transition-ease-out duration-300 hover:scale-105 text-center"

@@ -22,6 +22,9 @@ module.exports = {
         sxl: "1180px",
         xs: "480px",
       },
+      transitionTimingFunction:{
+        'in-expo': 'cubic-bezier(.12,.5,.84,.66)',
+      }
     },
   },
   plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
